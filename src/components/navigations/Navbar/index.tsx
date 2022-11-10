@@ -5,11 +5,11 @@ const Navbar = ({ isActive }: { isActive: boolean }) => {
   return (
     <Wrapper active={isActive}>
       <List>
-        <NavbarItem text='Inicio' to='/#inicio' />
-        <NavbarItem text='Servicios' to='/#servicios' />
-        <NavbarItem text='Portafolio' to='/#portafolio' />
-        <NavbarItem text='Tecnologías' to='/#tecnologias' />
-        <NavbarItem text='Contacto' to='/#contacto' />
+        <NavbarItem text='Inicio' to='/jsandovalbd-page/#inicio' />
+        <NavbarItem text='Servicios' to='/jsandovalbd-page/#servicios' />
+        <NavbarItem text='Portafolio' to='/jsandovalbd-page/#portafolio' />
+        <NavbarItem text='Tecnologías' to='/jsandovalbd-page/#tecnologias' />
+        <NavbarItem text='Contacto' to='/jsandovalbd-page/#contacto' />
       </List>
     </Wrapper>
   );
