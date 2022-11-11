@@ -1,8 +1,7 @@
 import { Col, Container, Row } from '../../layouts';
 import { SocialNetworks } from '../../navigations';
 import { FooterBackground } from './styled';
-import { Typography } from '../../display-data';
-import configMain from '../../../config/main';
+import { LogoTheme, Typography } from '../../display-data';
 
 const Footer = () => {
   return (
@@ -10,14 +9,11 @@ const Footer = () => {
       <Container>
         <Row className='align-items-center g-4'>
           <Col xs={12} lg={3} className='text-center text-lg-start'>
-            <a href=''>
-              <img src={configMain.logo.dark} alt='' width={140} />
-            </a>
+            <LogoTheme />
           </Col>
           <Col xs={12} lg={6}>
             <Typography size='xs' weight='semibold' className='text-center'>
               &copy; {new Date().getFullYear()} Copyright por David. Todos los derechos reservados.
-              Desarrollado por JDeveloperD
             </Typography>
           </Col>
           <Col xs={12} lg={3} className='text-center text-lg-end'>
