@@ -1,11 +1,14 @@
+import { AppProvider } from './context';
 import HomePage from './pages/HomePage';
 import { ThemeProvider } from './theme';
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <HomePage />
-    </ThemeProvider>
+    <AppProvider>
+      <ThemeProvider>
+        <HomePage />
+      </ThemeProvider>
+    </AppProvider>
   );
 };
 
