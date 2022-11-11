@@ -1,24 +1,12 @@
 import { Button, Col, Container, Row, SiGmail, Tag, Typography } from '../../../../components';
-import Wave from 'react-wavify';
-import { useTheme } from 'styled-components';
-import handMobile from '../../../../assets/img/mokups/hand-mobile-2.png';
 import random1 from '../../../../assets/img/mokups/random1.png';
-import adaraProject from '../../../../assets/img/projects/adara.jpg';
-import bernardoProject from '../../../../assets/img/projects/bernardo.jpg';
-import sweetFruitProject from '../../../../assets/img/projects/sweetfruit.jpg';
-import agroclubProject from '../../../../assets/img/projects/agroclub.jpg';
-import { BackgroundBanner, HandImage, ImageAnimated, SliderBanner } from './styled';
+import { BackgroundBanner, ImageAnimated } from './styled';
 import TypeIt from 'typeit-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { EffectFade, Autoplay } from 'swiper';
 import configContact from '../../../../config/contact';
+import Wave from './Wave';
+import HandSlider from './HandSlider';
 
 const BannerMainProject = () => {
-  const theme = useTheme();
   return (
     <BackgroundBanner id='inicio'>
       <ImageAnimated>
@@ -81,60 +69,11 @@ const BannerMainProject = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <HandImage>
-              <SliderBanner>
-                <Swiper
-                  spaceBetween={0}
-                  // effect={'fade'}
-                  direction={'vertical'}
-                  autoplay
-                  loop
-                  modules={[EffectFade, Autoplay]}
-                  className='swiper-projects'
-                >
-                  <SwiperSlide>
-                    <img src={adaraProject} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={bernardoProject} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={sweetFruitProject} />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={agroclubProject} />
-                  </SwiperSlide>
-                </Swiper>
-              </SliderBanner>
-              <img src={handMobile} />
-            </HandImage>
+            <HandSlider />
           </Col>
         </Row>
       </Container>
-      <div>
-        <Wave
-          fill={theme.colors['neutral-700']}
-          paused={false}
-          options={{
-            height: 30,
-            amplitude: 30,
-            speed: 0.15,
-            points: 3,
-          }}
-        />
-        <div style={{ position: 'absolute', bottom: '-1rem', width: '100%' }}>
-          <Wave
-            fill={theme.colors['neutral-800']}
-            paused={false}
-            options={{
-              height: 30,
-              amplitude: 30,
-              speed: 0.12,
-              points: 4,
-            }}
-          />
-        </div>
-      </div>
+      <Wave />
     </BackgroundBanner>
   );
 };

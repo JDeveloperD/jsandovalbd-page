@@ -10,9 +10,15 @@ const RotateCenterAnimation = keyframes`
 
 export const BackgroundBanner = styled.section`
   position: relative;
-  padding: 3rem 0 0;
+  padding: 3rem 0 6rem;
   overflow: hidden;
 `;
+
+export const ContentWave = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+`
 
 export const HandImage = styled.div`
   height: 400px;
