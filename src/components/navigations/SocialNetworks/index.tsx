@@ -13,7 +13,7 @@ const SocialNetworks = () => {
           className='rounded-pill'
           variant='outlined'
           size='icon'
-          color='brand-300'
+          color='textBody'
         >
           {social.icon}
         </Button>

@@ -20,25 +20,23 @@ const items = [
     paragraph:
       'Para el diseño se utiliza como herramienta principal (Figma), la cual ayudar a brindar soluciones acordes al giro de negocio del cliente.',
   },
-  // {
-  //   id: 'accordion-services-2',
-  //   title: 'Social Media',
-  //   paragraph:
-  //     'Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.',
-  // },
   {
-    id: 'accordion-services-3',
+    id: 'accordion-services-2',
     title: 'Desarrollo',
     paragraph:
       'Soy un desarrollador con una experiencia de 3 años, que maneja las tecnologías necesarias para desarrollar una web profesional.',
   },
+  // {
+  //   id: 'accordion-services-3',
+  //   title: 'Social Media',
+  //   paragraph:
+  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum possimus vero </br> similique dolore laboriosam error aliquid nobis, at, saepe quidem sunt repellendus iste <b>facere minima.</b> Enim magni porro nulla!',
+  // },
 ];
 
 const AccordionSectionServices = () => {
-  const [itemSelected, setItemSelected] = useState('accordion-services-1');
-  const handleSelectItem = (id: string) => {
-    setItemSelected(id);
-  };
+  const [itemSelected, setItemSelected] = useState(0);
+
   return (
     <Section id='servicios'>
       <Container>
@@ -50,14 +48,19 @@ const AccordionSectionServices = () => {
               icon={<AiOutlineStar />}
             />
             <Typography className='mt-3 mb-5 text-center text-md-start'>
-              Apply Notero’s elegant themes to your taste. Dark themes work excellently for those
-              who prefer distraction-free mode.
+              {/* Apply Notero’s elegant themes to your taste. Dark themes work excellently for those
+              who prefer distraction-free mode. */}
             </Typography>
-            <Accordion data={items} itemSelected={handleSelectItem} />
+            <Accordion
+              data={items}
+              itemSelected={index => {
+                setItemSelected(index);
+              }}
+            />
           </Col>
           <Col md={6} xl={5}>
-            {itemSelected === 'accordion-services-1' && <ImageSection src={Design} />}
-            {itemSelected === 'accordion-services-3' && <ImageSection src={Development} />}
+            {itemSelected === 0 && <ImageSection src={Design} />}
+            {itemSelected === 1 && <ImageSection src={Development} />}
           </Col>
         </Row>
       </Container>
