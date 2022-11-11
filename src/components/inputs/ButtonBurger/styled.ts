@@ -3,7 +3,7 @@ import { Z_INDEX_BUTTON } from '../../../theme';
 
 export const Background = styled.button`
   border-style: none;
-  padding: 0.25rem;
+  padding: 0;
   position: relative;
   height: 22px;
   width: 30px;
@@ -13,7 +13,7 @@ export const Background = styled.button`
 `;
 
 export const Burger = styled.span<{ active?: boolean }>`
-  width: 100%;
+  width: 80%;
   height: 2px;
   background: ${({ theme }) => theme.colors.titleSection};
   display: block;
@@ -24,7 +24,7 @@ export const Burger = styled.span<{ active?: boolean }>`
     content: '';
     background: ${({ theme }) => theme.colors.titleSection};
     height: inherit;
-    width: inherit;
+    width: 100%;
     display: inherit;
     position: absolute;
     transition: 0.3s ease;

@@ -1,20 +1,24 @@
-import { useToggle } from '../../../hooks';
+import { useToggle, useScrollDirection } from '../../../hooks';
 import { ButtonBurger } from '../../inputs';
 import { Col, Container, Row } from '../../layouts';
 import { Navbar, SocialNetworks } from '../../navigations';
-import configMain from '../../../config/main';
+import { HeaderWrapper } from './styled';
+import { LogoTheme } from '../../display-data';
 
 const Header = () => {
   const [openNav, toggleNav] = useToggle();
+  const scrollDirection = useScrollDirection();
 
   return (
-    <header className='py-2'>
+    <HeaderWrapper
+      id='header'
+      upScroll={scrollDirection === 'up'}
+      downScroll={scrollDirection === 'down'}
+    >
       <Container>
         <Row className='align-items-center'>
           <Col xs={6} md={3} lg={2}>
-            <a href=''>
-              <img src={configMain.logo.dark} alt='' width={140} />
-            </a>
+            <LogoTheme style={{ zIndex: 300 }} />
           </Col>
           <Col xs={6} md={9} lg={8}>
             <Navbar isActive={openNav} />
@@ -25,7 +29,7 @@ const Header = () => {
           </Col>
         </Row>
       </Container>
-    </header>
+    </HeaderWrapper>
   );
 };
 

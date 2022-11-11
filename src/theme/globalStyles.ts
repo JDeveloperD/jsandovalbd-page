@@ -34,6 +34,7 @@ export default createGlobalStyle`
       background: ${theme.colors.backgroundBody};
       color: ${theme.colors.textBody};
       font-family: ${theme.fonts.fontPrimary};
+      position: relative;
     }
 
     a {

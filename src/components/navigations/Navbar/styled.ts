@@ -14,7 +14,7 @@ export const Wrapper = styled.nav<{ active?: boolean }>`
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  padding: 4.5rem 1rem;
+  padding: 6rem 1rem 1rem;
 
   ${({ active }) =>
     active &&
