@@ -1,22 +1,13 @@
 import configContact from '@config/contact';
-import { Button } from '@components';
+import { SocialItem } from './styled';
 
 const SocialNetworks = () => {
   return (
-    <div className='d-inline-flex gap-2'>
+    <div className='d-inline-flex'>
       {configContact.socialNetworks.map(social => (
-        <Button
-          key={social.id}
-          as='a'
-          href={social.url}
-          target='_blank'
-          className='rounded-pill'
-          variant='outlined'
-          size='icon'
-          color='link'
-        >
+        <SocialItem key={social.id} as='a' href={social.url} target='_blank'>
           {social.icon}
-        </Button>
+        </SocialItem>
       ))}
     </div>
   );
