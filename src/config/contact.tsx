@@ -1,4 +1,4 @@
-import { SiGmail, FaLinkedinIn, FaGithub, BsWhatsapp } from '../components';
+import { SiGmail, FaLinkedinIn, FaGithub, BsWhatsapp } from '@components';
 
 const whatsapp = {
   string: '+51 973 140 063',

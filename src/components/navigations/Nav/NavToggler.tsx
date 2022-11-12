@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC } from 'react';
-import { useAppContext } from '../../../context';
+import { useAppContext } from '@context';
 import { Toggler, TogglerIcon } from './styled';
 
 type NavTogglerProps = {} & ButtonHTMLAttributes<HTMLButtonElement>;

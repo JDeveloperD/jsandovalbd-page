@@ -1,3 +1,4 @@
+import { Z_INDEX_PRELOADER } from '@theme';
 import styled, { css, keyframes } from 'styled-components';
 
 export const Animation = keyframes`
@@ -16,7 +17,7 @@ export const Animation = keyframes`
 
 export const Background = styled.div<{ isDone: boolean }>`
   position: fixed;
-  z-index: 10000;
+  z-index: ${Z_INDEX_PRELOADER};
   top: 0;
   left: 0;
   bottom: 0;
@@ -64,7 +65,7 @@ export const Progress = styled.div<{ width?: string; inactive: boolean }>`
   height: 1px;
   background: ${({ theme }) => theme.colors['brand-300']};
   top: 50%;
-  z-index: 9999999;
+  z-index: ${Z_INDEX_PRELOADER};
   transition: 0.7s ease-in-out;
   animation: ${Animation} 1s ease-in-out;
 

@@ -12,7 +12,12 @@ type SectionTitleProps = {
   align?: 'start' | 'center' | 'end';
 };
 
-const SectionTitle = ({ title, subtitle, icon, align = 'start' }: SectionTitleProps) => {
+const SectionTitle = ({
+  title,
+  subtitle,
+  icon,
+  align = 'start',
+}: SectionTitleProps) => {
   return (
     <div className={`mb-md-4 text-center text-md-${align}`}>
       <Tag size='sm' color='brand-500' label={subtitle} iconLeft={icon} />

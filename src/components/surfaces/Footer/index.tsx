@@ -1,7 +1,12 @@
-import { Col, Container, Row } from '../../layouts';
-import { SocialNetworks } from '../../navigations';
+import {
+  Col,
+  Container,
+  Row,
+  SocialNetworks,
+  LogoTheme,
+  Typography,
+} from '@components';
 import { FooterBackground } from './styled';
-import { LogoTheme, Typography } from '../../display-data';
 
 const Footer = () => {
   return (
@@ -13,7 +18,8 @@ const Footer = () => {
           </Col>
           <Col xs={12} lg={6}>
             <Typography size='xs' weight='semibold' className='text-center'>
-              &copy; {new Date().getFullYear()} Copyright por David. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} Copyright por David. Todos los
+              derechos reservados.
             </Typography>
           </Col>
           <Col xs={12} lg={3} className='text-center text-lg-end'>

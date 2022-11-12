@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { GRADIENT_COLOR, MEDIA_BREAKPOINTS } from '../../theme';
-import { Color } from '../../theme/styled';
+import { GRADIENT_COLOR, MEDIA_BREAKPOINTS } from '@theme';
+import { Color } from '@theme/styled';
 
 export type TextSize =
   | 'xs'

@@ -1,5 +1,5 @@
 import styled, { useTheme } from 'styled-components';
-import configMain from '../../config/main';
+import configMain from '@config/main';
 
 const LogoThemeContent = styled.a`
   display: inline-block;
@@ -19,7 +19,10 @@ const LogoTheme = ({ ...props }) => {
 
   return (
     <LogoThemeContent {...props}>
-      <img src={configMain.logo[theme.mode === 'light' ? 'default' : 'dark']} alt='JSandovalbD' />
+      <img
+        src={configMain.logo[theme.mode === 'light' ? 'default' : 'dark']}
+        alt='JSandovalbD'
+      />
     </LogoThemeContent>
   );
 };

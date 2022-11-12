@@ -1,5 +1,5 @@
-import configContact from '../../../config/contact';
-import { Button } from '../../inputs';
+import configContact from '@config/contact';
+import { Button } from '@components';
 
 const SocialNetworks = () => {
   return (

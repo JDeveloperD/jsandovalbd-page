@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { TRANSITIONS } from '../../../theme';
-import { getSize } from '../../display-data/Typography';
+import { TRANSITIONS } from '@theme';
+import { getSize } from '@components/display-data/Typography';
 
 const TRANSITION_COMMON = TRANSITIONS.base;
 
@@ -18,6 +18,15 @@ export const Toggle = styled.button<AccordionStyledProps>`
   background: transparent;
   border: none;
   color: ${({ theme }) => theme.colors.titleSection};
+
+  ${({ collapse }) =>
+    collapse &&
+    css`
+      svg {
+        transform: rotate(180deg);
+        transition: ${TRANSITION_COMMON};
+      }
+    `}
 `;
 
 export const Collapse = styled.div`

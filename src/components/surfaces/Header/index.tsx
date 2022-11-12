@@ -1,10 +1,15 @@
-import { useScrollDirection } from '../../../hooks';
-import { Col, Container, Row } from '../../layouts';
-import { Nav, SocialNetworks } from '../../navigations';
+import {
+  Col,
+  Container,
+  Row,
+  Nav,
+  SocialNetworks,
+  LogoTheme,
+} from '@components';
+import { useScrollDirection } from '@hooks';
 import { HeaderWrapper } from './styled';
-import { LogoTheme } from '../../display-data';
-import NavToggler from '../../navigations/Nav/NavToggler';
-import { useAppContext } from '../../../context';
+import NavToggler from '@components/navigations/Nav/NavToggler';
+import { useAppContext } from '@context';
 
 const Header = () => {
   const { openNav } = useAppContext();

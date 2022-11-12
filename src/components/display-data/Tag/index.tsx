@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { Color } from '../../../theme/styled';
+import { Color } from '@theme/styled';
 import { TagBackground, TagSize } from './styled';
 
 type TagProps = {

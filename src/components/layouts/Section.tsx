@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { MEDIA_BREAKPOINTS } from '../../theme';
-import { Color } from '../../theme/styled';
+import { MEDIA_BREAKPOINTS } from '@theme';
+import { Color } from '@theme/styled';
 
 export default styled.section<{ color?: Color }>`
   background: ${({ theme, color }) => color && theme.colors[color]};

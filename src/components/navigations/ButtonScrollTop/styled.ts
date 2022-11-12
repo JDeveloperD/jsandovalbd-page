@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-import { TRANSITIONS } from '../../../theme';
+import { TRANSITIONS } from '@theme';
 
 export const ProgressAnimation = keyframes`
   0% {

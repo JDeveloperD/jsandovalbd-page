@@ -6,7 +6,10 @@ type AccordionCollapseProps = {
   collapse?: boolean;
 };
 
-const AccordionCollapse: FC<AccordionCollapseProps> = ({ content, collapse }) => {
+const AccordionCollapse: FC<AccordionCollapseProps> = ({
+  content,
+  collapse,
+}) => {
   const [style, setStyle] = useState<CSSProperties>();
   const ref = useRef<HTMLDivElement>(null);
 

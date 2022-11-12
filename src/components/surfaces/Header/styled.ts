@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { TRANSITIONS } from '../../../theme';
+import { TRANSITIONS, Z_INDEX_HEADER } from '@theme';
 
 export const HeaderWrapper = styled.header<{
   upScroll: boolean;
@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.header<{
 }>`
   padding: 0.5rem 0;
   background: ${({ theme }) => theme.colors.backgroundBody};
-  z-index: 1000;
+  z-index: ${Z_INDEX_HEADER};
   position: sticky;
   width: 100%;
   transition: ${TRANSITIONS.base};

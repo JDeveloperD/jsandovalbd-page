@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export enum ScrollDirection {
   up = 'up',
@@ -35,9 +35,9 @@ export const useScrollDirection = (): ScrollDirection => {
 
     const onScroll = () => window.requestAnimationFrame(updateScrollDirection);
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return scrollDir;

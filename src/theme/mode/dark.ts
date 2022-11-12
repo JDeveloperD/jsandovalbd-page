@@ -1,5 +1,10 @@
 import { DefaultTheme } from 'styled-components';
-import { BASIC_COLOR, BRAND_COLOR, FONT_FAMILIES, NEUTRAL_COLOR } from '../variables';
+import {
+  BASIC_COLOR,
+  BRAND_COLOR,
+  FONT_FAMILIES,
+  NEUTRAL_COLOR,
+} from '../variables';
 
 const DarkMode: DefaultTheme = {
   mode: 'dark',

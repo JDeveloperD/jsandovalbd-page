@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { MEDIA_BREAKPOINTS } from '../../theme';
+import { MEDIA_BREAKPOINTS } from '@theme';
 
 const FadeInLeft = keyframes`
   0% {

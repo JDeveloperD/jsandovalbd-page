@@ -1,6 +1,6 @@
 import { darken } from 'polished';
 import styled, { css, DefaultTheme } from 'styled-components';
-import { Color } from '../../theme/styled';
+import { Color } from '@theme/styled';
 
 export type VariantButton = 'contained' | 'outlined' | 'text' | undefined;
 

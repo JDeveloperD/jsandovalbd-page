@@ -1,4 +1,4 @@
-import { FiChevronUp } from '../../icons';
+import { FiChevronUp } from '@components';
 import { Button, ChevronIcon, Circle, CircleContent } from './styled';
 import { useScroll } from './useScroll';
 

@@ -1,7 +1,7 @@
-import { LoaderPage } from './components';
-import { AppProvider } from './context';
-import HomePage from './pages/HomePage';
-import { ThemeProvider } from './theme';
+import { LoaderPage } from '@components';
+import { AppProvider } from '@context';
+import { HomePage } from '@view';
+import { ThemeProvider } from '@theme';
 
 const App = () => {
   return (

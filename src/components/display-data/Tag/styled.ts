@@ -1,6 +1,6 @@
 import { lighten } from 'polished';
 import styled, { css } from 'styled-components';
-import { Color } from '../../../theme/styled';
+import { Color } from '@theme/styled';
 import { getSize } from '../Typography';
 
 export type TagSize = 'sm' | 'md' | 'lg';

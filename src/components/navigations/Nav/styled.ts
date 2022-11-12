@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { MEDIA_BREAKPOINTS, Z_INDEX_NAV, Z_INDEX_BUTTON } from '../../../theme';
-import { getFontWeight, getSize } from '../../display-data/Typography';
+import { MEDIA_BREAKPOINTS, Z_INDEX_NAV, Z_INDEX_BUTTON } from '@theme';
+import { getFontWeight, getSize } from '@components/display-data/Typography';
 
 export const Container = styled.nav<{ active?: boolean }>`
   position: fixed;
