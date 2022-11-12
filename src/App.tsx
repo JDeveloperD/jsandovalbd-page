@@ -1,3 +1,4 @@
+import { LoaderPage } from './components';
 import { AppProvider } from './context';
 import HomePage from './pages/HomePage';
 import { ThemeProvider } from './theme';
@@ -7,6 +8,7 @@ const App = () => {
     <AppProvider>
       <ThemeProvider>
         <HomePage />
+        <LoaderPage />
       </ThemeProvider>
     </AppProvider>
   );
