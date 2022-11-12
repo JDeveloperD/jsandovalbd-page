@@ -34,7 +34,7 @@ const items = [
   // },
 ];
 
-const AccordionSectionServices = () => {
+const ServicesSection = () => {
   const [itemSelected, setItemSelected] = useState(0);
 
   return (
@@ -68,4 +68,4 @@ const AccordionSectionServices = () => {
   );
 };
 
-export default AccordionSectionServices;
+export default ServicesSection;

@@ -11,7 +11,7 @@ import logoInterfaz from '@assets/logos/logo-interfaz-light.png';
 import random2 from '@assets/img/mokups/random2.png';
 import { ImageAnimated, Logo } from './styled';
 
-const WorkOn = () => {
+const WorkOnSection = () => {
   return (
     <Section color='neutral-800' className='overflow-hidden pt-1'>
       <ImageAnimated>
@@ -48,4 +48,4 @@ const WorkOn = () => {
   );
 };
 
-export default WorkOn;
+export default WorkOnSection;

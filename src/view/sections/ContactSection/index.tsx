@@ -11,7 +11,7 @@ import iconLinkedin from '@assets/svg/brand/linkedin.svg';
 import iconWhatsapp from '@assets/svg/brand/whatsapp.svg';
 import configContact from '@config/contact';
 
-const ContactInfoSection = () => {
+const ContactSection = () => {
   const { socialNetworks } = configContact;
   return (
     <Section id='contacto'>
@@ -80,4 +80,4 @@ const ContactInfoSection = () => {
   );
 };
 
-export default ContactInfoSection;
+export default ContactSection;

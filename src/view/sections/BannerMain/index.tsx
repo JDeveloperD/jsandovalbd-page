@@ -14,7 +14,7 @@ import configContact from '@config/contact';
 import Wave from './Wave';
 import HandSlider from './HandSlider';
 
-const BannerMainProject = () => {
+const BannerMain = () => {
   return (
     <BackgroundBanner id='inicio'>
       <ImageAnimated>
@@ -96,4 +96,4 @@ const BannerMainProject = () => {
   );
 };
 
-export default BannerMainProject;
+export default BannerMain;

@@ -1,21 +1,22 @@
-import {
-  ContactInfoSection,
-  WorkOnSection,
-} from '@sections/personalInfo/components';
-import { BannerMainProject, GridProjects } from '@sections/projects/components';
-import { AccordionSectionServices } from '@sections/services/components';
-import { TecnologiesSection } from '@sections/tecnologies/components';
 import { DefaultLayout } from '@view/layouts';
+import {
+  BannerMain,
+  ContactSection,
+  ProjectsSection,
+  ServicesSection,
+  TecnologiesSection,
+  WorkOnSection,
+} from '@view/sections';
 
 const HomePage = () => {
   return (
     <DefaultLayout>
-      <BannerMainProject />
+      <BannerMain />
       <WorkOnSection />
-      <AccordionSectionServices />
-      <GridProjects />
+      <ServicesSection />
+      <ProjectsSection />
       <TecnologiesSection />
-      <ContactInfoSection />
+      <ContactSection />
     </DefaultLayout>
   );
 };

@@ -7,10 +7,10 @@ import {
   Section,
   FancyBox,
 } from '@components';
-import CardProject from '../Card';
+import CardProject from '../CardProject';
 import listProjects from './listProjects';
 
-const GridProjects = () => {
+const ProjectsSection = () => {
   return (
     <Section id='portafolio'>
       <Container>
@@ -41,4 +41,4 @@ const GridProjects = () => {
   );
 };
 
-export default GridProjects;
+export default ProjectsSection;
