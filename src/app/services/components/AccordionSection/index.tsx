@@ -9,8 +9,8 @@ import {
   SectionTitle,
   Typography,
 } from '../../../../components';
-import Development from '../../../../assets/img/services/desarrollo-web.png';
-import Design from '../../../../assets/img/services/service-section-home.png';
+import Development from '../../../../assets/img/services/desarrollo.png';
+import Design from '../../../../assets/img/services/diseno-ui-ux.png';
 import { useState } from 'react';
 
 const items = [
@@ -22,7 +22,7 @@ const items = [
   },
   {
     id: 'accordion-services-2',
-    title: 'Desarrollo',
+    title: 'Desarrollo (Front/Back)',
     paragraph:
       'Soy un desarrollador con una experiencia de 3 años, que maneja las tecnologías necesarias para desarrollar una web profesional.',
   },

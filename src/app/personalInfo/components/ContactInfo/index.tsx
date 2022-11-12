@@ -6,9 +6,9 @@ import {
   Typography,
 } from '../../../../components';
 import { Group, GroupIcon, GroupItem } from './styled';
-import iconGithub from '../../../../assets/svg/github.svg';
-import iconLinkedin from '../../../../assets/svg/linkedin.svg';
-import iconWhatsapp from '../../../../assets/svg/whatsapp.svg';
+import iconGithub from '../../../../assets/svg/brand/github.svg';
+import iconLinkedin from '../../../../assets/svg/brand/linkedin.svg';
+import iconWhatsapp from '../../../../assets/svg/brand/whatsapp.svg';
 import configContact from '../../../../config/contact';
 
 const ContactInfoSection = () => {
