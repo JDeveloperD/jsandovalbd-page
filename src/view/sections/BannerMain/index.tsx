@@ -27,7 +27,7 @@ const BannerMain = () => {
             <Typography
               as='h1'
               size='4xl'
-              color='titleSection'
+              color='headline-1'
               className='my-3 my-md-4'
             >
               Hola! soy David,

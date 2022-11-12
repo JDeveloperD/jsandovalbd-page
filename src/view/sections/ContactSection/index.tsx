@@ -32,10 +32,10 @@ const ContactSection = () => {
               <img src={iconLinkedin} width={45} height={45} />
             </GroupIcon>
             <div>
-              <Typography size='2xl' color='titleSection'>
+              <Typography size='2xl' color='headline-1'>
                 {socialNetworks[1].name}
               </Typography>
-              <Typography color='textBody' size='sm'>
+              <Typography color='text' size='sm'>
                 {socialNetworks[1].description}
               </Typography>
             </div>
@@ -49,10 +49,10 @@ const ContactSection = () => {
               <img src={iconGithub} width={45} height={45} />
             </GroupIcon>
             <div>
-              <Typography size='2xl' color='titleSection'>
+              <Typography size='2xl' color='headline-1'>
                 {socialNetworks[2].name}
               </Typography>
-              <Typography color='textBody' size='sm'>
+              <Typography color='text' size='sm'>
                 {socialNetworks[2].description}
               </Typography>
             </div>
@@ -66,10 +66,10 @@ const ContactSection = () => {
               <img src={iconWhatsapp} width={45} height={45} />
             </GroupIcon>
             <div>
-              <Typography size='2xl' color='titleSection'>
+              <Typography size='2xl' color='headline-1'>
                 {socialNetworks[3].name}
               </Typography>
-              <Typography color='textBody' size='sm'>
+              <Typography color='text' size='sm'>
                 {socialNetworks[3].description}
               </Typography>
             </div>

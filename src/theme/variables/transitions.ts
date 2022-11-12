@@ -1,3 +1,3 @@
 export const TRANSITIONS = {
-  base: '0.3s ease',
+  base: '0.3s ease-in-out',
 };

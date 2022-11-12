@@ -4,7 +4,7 @@ import { MEDIA_BREAKPOINTS, TRANSITIONS } from '@theme';
 export const Group = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid ${({ theme }) => theme.colors.borderColor};
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 0.5rem;
   padding: 1.5rem 0;
 
@@ -28,7 +28,7 @@ export const GroupItem = styled.a`
 
   ${MEDIA_BREAKPOINTS.tablet} {
     justify-content: center;
-    border-right: 1px solid ${({ theme }) => theme.colors.borderColor};
+    border-right: 1px solid ${({ theme }) => theme.colors.border};
     padding: 0.75rem 1.5rem;
 
     &:last-child {

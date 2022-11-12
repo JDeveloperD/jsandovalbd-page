@@ -4,14 +4,14 @@ import { useState } from 'react';
 import { DefaultTheme } from 'styled-components';
 
 const useToggleTheme = () => {
-  const [theme, setTheme] = useState<DefaultTheme>(dark);
+  const [theme, setTheme] = useState<DefaultTheme>(light);
 
   const toggleTheme = () => {
-    const ob = theme.mode === 'light' ? dark : light;
+    const currentTheme = theme.mode === 'light' ? dark : light;
     // set localstorage
-    setLocalStorage('theme', ob);
+    setLocalStorage('theme', currentTheme);
     // set state
-    setTheme(ob);
+    setTheme(currentTheme);
   };
 
   return {

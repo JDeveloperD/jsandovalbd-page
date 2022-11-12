@@ -7,7 +7,7 @@ const Wave = () => {
   return (
     <ContentWave>
       <Wavify
-        fill={theme.colors['neutral-700']}
+        fill={theme.colors['background-2']}
         paused={false}
         options={{
           height: 30,
@@ -18,7 +18,7 @@ const Wave = () => {
       />
       <div style={{ position: 'absolute', bottom: '-1rem', width: '100%' }}>
         <Wavify
-          fill={theme.colors['neutral-800']}
+          fill={theme.colors['background-1']}
           paused={false}
           options={{
             height: 30,

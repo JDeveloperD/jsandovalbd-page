@@ -36,9 +36,11 @@ export const Logo = styled.a`
   display: block;
   margin: 0 auto;
   width: 150px;
+  text-align: center;
 
   img {
-    /* filter: brightness(50%); */
+    filter: ${({ theme }) =>
+      theme.mode === 'light' ? 'brightness(50%)' : undefined};
     width: 120px;
     height: 100px;
     object-fit: contain;

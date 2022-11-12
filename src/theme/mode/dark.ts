@@ -39,15 +39,18 @@ const DarkMode: DefaultTheme = {
     success: '',
 
     white: BASIC_COLOR.white,
-    light: '#f8f8f8',
+    light: NEUTRAL_COLOR[100],
     gray: '',
     black: BASIC_COLOR.black,
 
-    link: BRAND_COLOR[500],
-    borderColor: NEUTRAL_COLOR[700],
-    textBody: NEUTRAL_COLOR[400],
-    titleSection: NEUTRAL_COLOR[100],
-    backgroundBody: NEUTRAL_COLOR[900],
+    link: BRAND_COLOR[300],
+
+    body: NEUTRAL_COLOR[900],
+    text: NEUTRAL_COLOR[400],
+    'headline-1': NEUTRAL_COLOR[100],
+    'background-1': NEUTRAL_COLOR[800],
+    'background-2': NEUTRAL_COLOR[700],
+    border: NEUTRAL_COLOR[700],
   },
   fonts: {
     fontPrimary: FONT_FAMILIES.inter,

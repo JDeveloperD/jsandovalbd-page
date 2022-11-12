@@ -40,7 +40,7 @@ export const Background = styled.div<{ isDone: boolean }>`
     height: 50%;
     position: absolute;
     left: 0;
-    background: ${({ theme }) => theme.colors.backgroundBody};
+    background: ${({ theme }) => theme.colors.body};
     transition: all 0.7s cubic-bezier(1, 0, 0.55, 1);
     transition-delay: 0.5s;
 

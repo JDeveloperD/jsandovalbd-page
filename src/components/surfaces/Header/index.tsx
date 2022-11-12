@@ -3,13 +3,15 @@ import {
   Container,
   Row,
   Nav,
-  SocialNetworks,
   LogoTheme,
+  SocialNetworks,
 } from '@components';
 import { useScrollDirection } from '@hooks';
-import { HeaderWrapper } from './styled';
+import { HeaderButtons, HeaderWrapper } from './styled';
 import NavToggler from '@components/navigations/Nav/NavToggler';
 import { useAppContext } from '@context';
+import { SwitchTheme } from '@theme';
+import { ButtonLanguage } from '@i18n';
 
 const Header = () => {
   const { openNav } = useAppContext();
@@ -24,15 +26,27 @@ const Header = () => {
     >
       <Container>
         <Row className='align-items-center'>
-          <Col xs={6} md={3} lg={2}>
+          <Col xs={2} sm={3} className='d-md-none'>
+            <NavToggler className='d-md-none' />
+          </Col>
+          <Col xs={6} md={3} lg={2} className='text-center text-md-start'>
             <LogoTheme style={{ zIndex: 300 }} />
           </Col>
-          <Col xs={6} md={9} lg={8}>
-            <Nav />
-            <NavToggler className='ms-auto d-md-none' />
-          </Col>
-          <Col lg={2} className='d-none d-lg-block text-end'>
-            <SocialNetworks />
+          <Col xs={4} sm={3} md={9} lg={10}>
+            <div className='d-flex align-items-center justify-content-end'>
+              <Nav />
+              <HeaderButtons>
+                <div>
+                  <ButtonLanguage />
+                </div>
+                <div>
+                  <SwitchTheme />
+                </div>
+                <div className='d-none d-lg-inline-block'>
+                  <SocialNetworks />
+                </div>
+              </HeaderButtons>
+            </div>
           </Col>
         </Row>
       </Container>

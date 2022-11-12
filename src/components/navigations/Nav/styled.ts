@@ -1,5 +1,10 @@
 import styled, { css } from 'styled-components';
-import { MEDIA_BREAKPOINTS, Z_INDEX_NAV, Z_INDEX_BUTTON } from '@theme';
+import {
+  MEDIA_BREAKPOINTS,
+  Z_INDEX_NAV,
+  Z_INDEX_BUTTON,
+  TRANSITIONS,
+} from '@theme';
 import { getFontWeight, getSize } from '@components/display-data/Typography';
 
 export const Container = styled.nav<{ active?: boolean }>`
@@ -8,7 +13,7 @@ export const Container = styled.nav<{ active?: boolean }>`
   left: 0;
   width: 100%;
   height: 100vh;
-  background: ${({ theme }) => theme.colors.backgroundBody};
+  background: ${({ theme }) => theme.colors.body};
   z-index: ${Z_INDEX_NAV};
   transform: scale(1.2);
   visibility: hidden;
@@ -51,7 +56,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 
   ${MEDIA_BREAKPOINTS.tablet} {
     display: inline-block;
@@ -66,10 +71,10 @@ export const Button = styled.button`
   display: flex;
   padding: 1rem 0;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.textBody};
+  color: ${({ theme }) => theme.colors.text};
 
   &:hover {
-    color: ${({ theme }) => theme.colors.titleSection};
+    color: ${({ theme }) => theme.colors['headline-1']};
   }
 
   ${MEDIA_BREAKPOINTS.tablet} {
@@ -81,17 +86,17 @@ export const Button = styled.button`
 
     &::after {
       content: '';
-      width: 50%;
+      width: 0;
       height: 1px;
       background: ${({ theme }) => theme.colors['brand-700']};
       position: absolute;
       bottom: 1.25rem;
-      display: none;
+      transition: ${TRANSITIONS.base};
     }
 
     &:hover {
       &::after {
-        display: block;
+        width: 50%;
       }
     }
   }
@@ -101,9 +106,8 @@ export const Toggler = styled.button`
   border-style: none;
   padding: 0;
   position: relative;
-  height: 22px;
-  width: 30px;
-  display: block;
+  height: 16px;
+  width: 22px;
   background: transparent;
   z-index: ${Z_INDEX_BUTTON};
 `;
@@ -111,14 +115,14 @@ export const Toggler = styled.button`
 export const TogglerIcon = styled.span<{ active?: boolean }>`
   width: 80%;
   height: 2px;
-  background: ${({ theme }) => theme.colors.titleSection};
+  background: ${({ theme }) => theme.colors.text};
   display: block;
   transition: 0.3s ease;
 
   &::before,
   &::after {
     content: '';
-    background: ${({ theme }) => theme.colors.titleSection};
+    background: ${({ theme }) => theme.colors.text};
     height: inherit;
     width: 100%;
     display: inherit;

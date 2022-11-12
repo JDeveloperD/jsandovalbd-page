@@ -4,7 +4,7 @@ import configMain from '@config/main';
 const LogoThemeContent = styled.a`
   display: inline-block;
   width: 100%;
-  height: 45px;
+  height: 40px;
   position: relative;
 
   img {

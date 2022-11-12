@@ -15,7 +15,7 @@ export default createGlobalStyle`
     scroll-behavior: smooth;
   }
   :focus {
-    outline: none;
+    /* outline: 2px solid ${({ theme }) => theme.colors['brand-200']}; */
   }
 
   #__next {
@@ -31,8 +31,8 @@ export default createGlobalStyle`
       padding: 0;
       min-height: 100vh;
       overflow-x: hidden;
-      background: ${theme.colors.backgroundBody};
-      color: ${theme.colors.textBody};
+      background: ${theme.colors.body};
+      color: ${theme.colors.text};
       font-family: ${theme.fonts.fontPrimary};
       position: relative;
     }

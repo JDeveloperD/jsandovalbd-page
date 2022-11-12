@@ -11,6 +11,7 @@ export type Colors = {
   'neutral-700': string;
   'neutral-800': string;
   'neutral-900': string;
+
   'brand-50': string;
   'brand-100': string;
   'brand-200': string;
@@ -33,11 +34,13 @@ export type Colors = {
   light: string;
   gray: string;
   black: string;
-  textBody: string;
   link: string;
-  borderColor: string;
-  titleSection: string;
-  backgroundBody: string;
+  body: string;
+  text: string;
+  'headline-1': string;
+  'background-1': string;
+  'background-2': string;
+  border: string;
 };
 
 export type Color = keyof Colors;

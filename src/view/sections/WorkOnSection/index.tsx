@@ -13,7 +13,7 @@ import { ImageAnimated, Logo } from './styled';
 
 const WorkOnSection = () => {
   return (
-    <Section color='neutral-800' className='overflow-hidden pt-1'>
+    <Section color='background-1' className='overflow-hidden pt-1'>
       <ImageAnimated>
         <img src={random2} />
       </ImageAnimated>

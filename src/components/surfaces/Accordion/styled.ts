@@ -17,7 +17,10 @@ export const Toggle = styled.button<AccordionStyledProps>`
   padding: 1rem;
   background: transparent;
   border: none;
-  color: ${({ theme }) => theme.colors.titleSection};
+  color: ${({ theme }) =>
+    theme.mode === 'light'
+      ? theme.colors['brand-600']
+      : theme.colors['headline-1']};
 
   ${({ collapse }) =>
     collapse &&
@@ -41,7 +44,7 @@ export const Item = styled.div<AccordionStyledProps>`
   border-radius: 0.5rem;
   margin-bottom: 0.25rem;
   transition: ${TRANSITION_COMMON};
-  border: 1px solid ${({ theme }) => theme.colors.borderColor};
+  border: 1px solid ${({ theme }) => theme.colors.border};
 
   &:active {
     filter: brightness(140%);
@@ -50,7 +53,7 @@ export const Item = styled.div<AccordionStyledProps>`
   ${({ collapse }) =>
     collapse &&
     css`
-      background: ${({ theme }) => theme.colors['neutral-800']};
-      border-color: ${({ theme }) => theme.colors['neutral-800']};
+      background: ${({ theme }) => theme.colors['background-1']};
+      border-color: ${({ theme }) => theme.colors['background-1']};
     `}
 `;

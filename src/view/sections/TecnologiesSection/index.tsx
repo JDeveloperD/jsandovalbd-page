@@ -16,7 +16,7 @@ import bootstrap from '@assets/svg/tecnology/bootstrap.svg';
 
 const TecnologiesSection = () => {
   return (
-    <Section color='neutral-800' id='tecnologias'>
+    <Section color='background-1' id='tecnologias'>
       <Container>
         <BackgroundImg>
           <img src={random2} />

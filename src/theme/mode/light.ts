@@ -39,15 +39,17 @@ const LightMode: DefaultTheme = {
     success: '',
 
     white: BASIC_COLOR.white,
-    light: '#f8f8f8',
+    light: NEUTRAL_COLOR[100],
     gray: '',
     black: BASIC_COLOR.black,
-
-    textBody: NEUTRAL_COLOR[500],
     link: BRAND_COLOR[500],
-    borderColor: NEUTRAL_COLOR[200],
-    titleSection: NEUTRAL_COLOR[800],
-    backgroundBody: BASIC_COLOR.white,
+    body: BASIC_COLOR.white,
+    // body: NEUTRAL_COLOR[50],
+    text: NEUTRAL_COLOR[700],
+    'headline-1': NEUTRAL_COLOR[800],
+    'background-1': NEUTRAL_COLOR[100],
+    'background-2': NEUTRAL_COLOR[200],
+    border: NEUTRAL_COLOR[200],
   },
   fonts: {
     fontPrimary: FONT_FAMILIES.inter,

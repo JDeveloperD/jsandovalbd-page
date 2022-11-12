@@ -24,7 +24,7 @@ const SectionTitle = ({
       <div
         className={`mt-3 d-flex flex-wrap gap-2 justify-content-center justify-content-md-${align}`}
       >
-        <Typography as='h3' size='4xl' color='titleSection'>
+        <Typography as='h3' size='4xl' color='headline-1'>
           {title.left}
         </Typography>
         <Typography as='h3' size='4xl' isGradient>
