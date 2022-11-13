@@ -1,7 +1,7 @@
 {
-  "name": "test-eslint-prettier",
+  "name": "jsandovalbd-page",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
-    "@types/styled-components": "^5.1.26",
     "bootstrap": "^5.2.2",
     "gh-pages": "^4.0.0",
     "i18next": "^22.0.5",
@@ -31,6 +30,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.26",
     "@types/fancybox": "^3.5.3",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
