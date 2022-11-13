@@ -9,12 +9,16 @@ import {
 } from '@components';
 import random1 from '@assets/img/mokups/random1.png';
 import { BackgroundBanner, ImageAnimated } from './styled';
-import TypeIt from 'typeit-react';
+// import TypeIt from 'typeit-react';
 import configContact from '@config/contact';
 import Wave from './Wave';
 import HandSlider from './HandSlider';
+import { useTranslation } from 'react-i18next';
+import TypewriterComponent from 'typewriter-effect';
 
 const BannerMain = () => {
+  const { t } = useTranslation();
+
   return (
     <BackgroundBanner id='inicio'>
       <ImageAnimated>
@@ -23,14 +27,14 @@ const BannerMain = () => {
       <Container>
         <Row className='align-items-center g-5'>
           <Col lg={6} className='text-center text-lg-start'>
-            <Tag label='Bienvenidos' size='sm' color='brand-600' />
+            <Tag label={t('bannerMain.title.tag')} size='sm' />
             <Typography
               as='h1'
               size='4xl'
               color='headline-1'
               className='my-3 my-md-4'
             >
-              Hola! soy David,
+              {t('bannerMain.title.headline.presentation')}
               <br />
               <Typography
                 size='5xl'
@@ -38,41 +42,19 @@ const BannerMain = () => {
                 isGradient
                 className='d-inline-block pt-3'
               >
-                <TypeIt
+                <TypewriterComponent
                   options={{
+                    strings: [
+                      t('bannerMain.title.headline.strings.developer'),
+                      t('bannerMain.title.headline.strings.designer'),
+                    ],
                     loop: true,
-                    lifeLike: true,
-                    cursor: true,
-                    cursorSpeed: 1000,
-                    breakLines: false,
-                  }}
-                  getBeforeInit={(instance: any) => {
-                    instance
-                      .type('Desarrollador <br className="d-none" /> FrontEnd')
-                      .pause(750)
-                      .move(-3)
-                      .delete(5)
-                      .pause(500)
-                      .type('Back')
-                      .move(3)
-                      .pause(2000)
-                      .delete()
-                      .type('Diseñador UI')
-                      .pause(500)
-                      .type('/UX')
-                      .pause(2000)
-                      .go();
-
-                    return instance;
+                    autoStart: true,
                   }}
                 />
               </Typography>
             </Typography>
-            <Typography>
-              Te invito a conocer un poco más sobre mi experiencia como
-              desarrollador y diseñador UI/UX, a partir de proyectos realizados
-              como freelancer y como colaborador en otras empresas.
-            </Typography>
+            <Typography>{t('bannerMain.paragraph')}</Typography>
             <div className='mt-5'>
               <Button
                 as='a'
@@ -82,7 +64,7 @@ const BannerMain = () => {
                 color='brand-500'
                 size='md'
               >
-                Escríbeme un mensaje <SiGmail />
+                {t('bannerMain.button')} <SiGmail />
               </Button>
             </div>
           </Col>

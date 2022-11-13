@@ -16,17 +16,19 @@
     "@types/styled-components": "^5.1.26",
     "bootstrap": "^5.2.2",
     "gh-pages": "^4.0.0",
+    "i18next": "^22.0.5",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^12.0.0",
     "react-icons": "^4.6.0",
     "react-is": ">= 16.8.0",
     "react-wavify": "^1.6.3",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.4",
-    "typeit-react": "^2.6.0"
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/fancybox": "^3.5.3",

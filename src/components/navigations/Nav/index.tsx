@@ -1,9 +1,11 @@
 import { useAppContext } from '@context';
 import { Typography, SocialNetworks } from '@components';
 import { Button, Container, Item, List } from './styled';
+import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
   const { openNav, toggleOpenNav } = useAppContext();
+  const { t } = useTranslation();
 
   const onSelectItem = (path: string) => {
     toggleOpenNav();
@@ -18,31 +20,33 @@ const Nav = () => {
       <List>
         <Item>
           <Button onClick={() => onSelectItem('/jsandovalbd-page/#inicio')}>
-            Inicio
+            {t('header.nav.home')}
           </Button>
         </Item>
         <Item>
           <Button onClick={() => onSelectItem('/jsandovalbd-page/#servicios')}>
-            Servicios
+            {t('header.nav.services')}
           </Button>
         </Item>
         <Item>
           <Button onClick={() => onSelectItem('/jsandovalbd-page/#portafolio')}>
-            Portafolio
+            {t('header.nav.portfolio')}
           </Button>
         </Item>
         <Item>
           <Button onClick={() => onSelectItem('/jsandovalbd-page/#contacto')}>
-            Contacto
+            {t('header.nav.contact')}
           </Button>
         </Item>
       </List>
       <div className='text-center d-md-none'>
         <SocialNetworks />
-        <Typography size='xs' weight='semibold' className='mt-3'>
-          &copy; {new Date().getFullYear()} Copyright por David. Todos los
-          derechos reservados.
-        </Typography>
+        <Typography
+          size='xs'
+          weight='semibold'
+          className='mt-3'
+          dangerouslySetInnerHTML={{ __html: t('copy') }}
+        />
       </div>
     </Container>
   );

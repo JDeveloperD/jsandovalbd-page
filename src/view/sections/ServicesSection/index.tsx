@@ -12,30 +12,24 @@ import {
 import Development from '@assets/img/services/desarrollo.png';
 import Design from '@assets/img/services/diseno-ui-ux.png';
 import { useState } from 'react';
-
-const items = [
-  {
-    id: 'accordion-services-1',
-    title: 'Diseño web Ux/UI',
-    paragraph:
-      'Para el diseño se utiliza como herramienta principal (Figma), la cual ayudar a brindar soluciones acordes al giro de negocio del cliente.',
-  },
-  {
-    id: 'accordion-services-2',
-    title: 'Desarrollo (Front/Back)',
-    paragraph:
-      'Soy un desarrollador con una experiencia de 3 años, que maneja las tecnologías necesarias para desarrollar una web profesional.',
-  },
-  // {
-  //   id: 'accordion-services-3',
-  //   title: 'Social Media',
-  //   paragraph:
-  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum possimus vero </br> similique dolore laboriosam error aliquid nobis, at, saepe quidem sunt repellendus iste <b>facere minima.</b> Enim magni porro nulla!',
-  // },
-];
+import { useTranslation } from 'react-i18next';
 
 const ServicesSection = () => {
   const [itemSelected, setItemSelected] = useState(0);
+  const { t } = useTranslation();
+
+  const items = [
+    {
+      id: 'accordion-services-1',
+      title: t('serviceSection.design.title'),
+      paragraph: t('serviceSection.design.description'),
+    },
+    {
+      id: 'accordion-services-2',
+      title: t('serviceSection.development.title'),
+      paragraph: t('serviceSection.development.description'),
+    },
+  ];
 
   return (
     <Section id='servicios'>
@@ -43,8 +37,11 @@ const ServicesSection = () => {
         <Row className='align-items-center justify-content-around g-3'>
           <Col md={6} xl={5}>
             <SectionTitle
-              subtitle='Especialidades'
-              title={{ left: 'Mi', colored: 'Experiencia' }}
+              subtitle={t('serviceSection.title.tag')}
+              title={{
+                left: t('serviceSection.title.headline.left'),
+                colored: t('serviceSection.title.headline.colored'),
+              }}
               icon={<AiOutlineStar />}
             />
             <Typography className='mt-3 mb-5 text-center text-md-start'>

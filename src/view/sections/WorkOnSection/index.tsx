@@ -10,8 +10,10 @@ import logoPandora from '@assets/logos/logo-pandora.svg';
 import logoInterfaz from '@assets/logos/logo-interfaz-light.png';
 import random2 from '@assets/img/mokups/random2.png';
 import { ImageAnimated, Logo } from './styled';
+import { useTranslation } from 'react-i18next';
 
 const WorkOnSection = () => {
+  const { t } = useTranslation();
   return (
     <Section color='background-1' className='overflow-hidden pt-1'>
       <ImageAnimated>
@@ -19,8 +21,11 @@ const WorkOnSection = () => {
       </ImageAnimated>
       <Container>
         <SectionTitle
-          subtitle='Experiencia Laboral'
-          title={{ left: 'Empresas en las', colored: 'que Trabajé' }}
+          subtitle={t('workOnSection.title.tag')}
+          title={{
+            left: t('workOnSection.title.headline.left'),
+            colored: t('workOnSection.title.headline.colored'),
+          }}
           icon={<AiOutlineStar />}
           align='center'
         />

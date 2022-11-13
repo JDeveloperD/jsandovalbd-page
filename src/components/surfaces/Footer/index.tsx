@@ -6,9 +6,12 @@ import {
   LogoTheme,
   Typography,
 } from '@components';
+import { useTranslation } from 'react-i18next';
 import { FooterBackground } from './styled';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <FooterBackground>
       <Container>
@@ -17,10 +20,12 @@ const Footer = () => {
             <LogoTheme />
           </Col>
           <Col xs={12} lg={6}>
-            <Typography size='xs' weight='semibold' className='text-center'>
-              &copy; {new Date().getFullYear()} Copyright por David. Todos los
-              derechos reservados.
-            </Typography>
+            <Typography
+              size='xs'
+              weight='semibold'
+              className='text-center'
+              dangerouslySetInnerHTML={{ __html: t('copy') }}
+            />
           </Col>
           <Col xs={12} lg={3} className='text-center text-lg-end'>
             <SocialNetworks />

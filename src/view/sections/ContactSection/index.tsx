@@ -10,15 +10,21 @@ import iconGithub from '@assets/svg/brand/github.svg';
 import iconLinkedin from '@assets/svg/brand/linkedin.svg';
 import iconWhatsapp from '@assets/svg/brand/whatsapp.svg';
 import configContact from '@config/contact';
+import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
   const { socialNetworks } = configContact;
+  const { t } = useTranslation();
+
   return (
     <Section id='contacto'>
       <Container>
         <SectionTitle
-          subtitle='Información de contacto'
-          title={{ left: '¿Quieres saber', colored: 'Más sobre Mí?' }}
+          subtitle={t('contactSection.title.tag')}
+          title={{
+            left: t('contactSection.title.headline.left'),
+            colored: t('contactSection.title.headline.colored'),
+          }}
           icon={<AiOutlineStar />}
           align='center'
         />
@@ -33,10 +39,10 @@ const ContactSection = () => {
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>
-                {socialNetworks[1].name}
+                Linkedin
               </Typography>
               <Typography color='text' size='sm'>
-                {socialNetworks[1].description}
+                {t('contactSection.links.linkedin')}
               </Typography>
             </div>
           </GroupItem>
@@ -50,10 +56,10 @@ const ContactSection = () => {
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>
-                {socialNetworks[2].name}
+                Github
               </Typography>
               <Typography color='text' size='sm'>
-                {socialNetworks[2].description}
+                {t('contactSection.links.github')}
               </Typography>
             </div>
           </GroupItem>
@@ -67,7 +73,7 @@ const ContactSection = () => {
             </GroupIcon>
             <div>
               <Typography size='2xl' color='headline-1'>
-                {socialNetworks[3].name}
+                Whatsapp
               </Typography>
               <Typography color='text' size='sm'>
                 {socialNetworks[3].description}

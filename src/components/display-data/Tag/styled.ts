@@ -1,4 +1,3 @@
-import { lighten } from 'polished';
 import styled, { css } from 'styled-components';
 import { Color } from '@theme/styled';
 import { getSize } from '../Typography';
@@ -10,10 +9,14 @@ export const TagBackground = styled.div<{ size?: TagSize; color?: Color }>`
   gap: 0.25rem;
   align-items: center;
   border-radius: 50px;
-  background: ${({ theme, color }) =>
-    !color ? theme.colors['neutral-100'] : lighten(0.3, theme.colors[color])};
-  color: ${({ theme, color }) =>
-    !color ? theme.colors['neutral-600'] : theme.colors[color]};
+  background: ${({ theme }) =>
+    theme.mode === 'light'
+      ? theme.colors['brand-100']
+      : theme.colors['neutral-600']};
+  color: ${({ theme }) =>
+    theme.mode === 'light'
+      ? theme.colors['brand-500']
+      : theme.colors['neutral-300']};
 
   ${({ size }) => {
     switch (size) {
