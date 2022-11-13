@@ -14,12 +14,10 @@ export default createGlobalStyle`
   html {
     scroll-behavior: smooth;
   }
-  :focus {
-    /* outline: 2px solid ${({ theme }) => theme.colors['brand-200']}; */
-  }
 
   #__next {
     min-height: 100vh;
+
     @media print {
       background: white;
     }
@@ -66,6 +64,11 @@ export default createGlobalStyle`
     }
     figure {
       margin: 0;
+    }
+
+    .Typewriter__cursor {
+      -webkit-text-fill-color: ${({ theme }) => theme.colors['headline-1']};
+      font-weight: 300;
     }
   `}
 `;

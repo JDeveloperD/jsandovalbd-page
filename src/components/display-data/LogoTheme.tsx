@@ -18,7 +18,7 @@ const LogoTheme = ({ ...props }) => {
   const theme = useTheme();
 
   return (
-    <LogoThemeContent {...props}>
+    <LogoThemeContent {...props} href='/jsandovalbd-page/'>
       <img
         src={configMain.logo[theme.mode === 'light' ? 'default' : 'dark']}
         alt='JSandovalbD'

@@ -10,7 +10,7 @@ type AccordionProps = {
 } & HtmlHTMLAttributes<HTMLDivElement>;
 
 const Accordion: FC<AccordionProps> = ({ data, itemSelected, ...props }) => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const onToggle = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index);

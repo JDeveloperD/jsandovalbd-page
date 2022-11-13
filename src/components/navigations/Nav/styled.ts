@@ -6,6 +6,7 @@ import {
   TRANSITIONS,
 } from '@theme';
 import { getFontWeight, getSize } from '@components/display-data/Typography';
+import activeHeader from '@assets/img/mokups/active-header.png';
 
 export const Container = styled.nav<{ active?: boolean }>`
   position: fixed;
@@ -84,19 +85,24 @@ export const Button = styled.button`
     padding: 1.5rem 1rem;
     position: relative;
 
-    &::after {
+    &::before {
       content: '';
-      width: 0;
-      height: 1px;
-      background: ${({ theme }) => theme.colors['brand-700']};
+      display: block;
+      width: 100%;
+      height: 0;
       position: absolute;
-      bottom: 1.25rem;
+      top: 0;
+      left: 0;
+      background-image: url(${activeHeader});
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       transition: ${TRANSITIONS.base};
     }
 
     &:hover {
-      &::after {
-        width: 50%;
+      &::before {
+        height: 10px;
       }
     }
   }

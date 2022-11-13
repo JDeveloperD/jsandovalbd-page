@@ -26,11 +26,15 @@ export const HeaderWrapper = styled.header<{
   position: sticky;
   width: 100%;
   transition: ${TRANSITIONS.base};
+  background: ${({ theme }) => theme.colors.body};
+
+  ${MEDIA_BREAKPOINTS.tablet} {
+    padding: 0;
+  }
 
   ${({ upScroll }) =>
     upScroll &&
     css`
-      background: ${({ theme }) => theme.colors.body};
       top: 0;
     `}
 
