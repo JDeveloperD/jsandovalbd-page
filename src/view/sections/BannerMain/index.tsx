@@ -9,7 +9,6 @@ import {
 } from '@components';
 import random1 from '@assets/img/mokups/random1.png';
 import { BackgroundBanner, ImageAnimated } from './styled';
-// import TypeIt from 'typeit-react';
 import configContact from '@config/contact';
 import Wave from './Wave';
 import HandSlider from './HandSlider';
