@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { DefaultTheme } from 'styled-components';
 
 const useToggleTheme = () => {
-  const [theme, setTheme] = useState<DefaultTheme>(light);
+  const [theme, setTheme] = useState<DefaultTheme>(dark);
 
   const toggleTheme = () => {
     const currentTheme = theme.mode === 'light' ? dark : light;
