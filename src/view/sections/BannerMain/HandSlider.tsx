@@ -13,7 +13,11 @@ import { EffectFade, Autoplay } from 'swiper';
 
 const HandSlider = () => {
   return (
-    <HandImage>
+    <HandImage
+      data-aos='fade-left'
+      data-aos-delay={2500}
+      data-aos-duration={1500}
+    >
       <SliderBanner>
         <Swiper
           spaceBetween={0}

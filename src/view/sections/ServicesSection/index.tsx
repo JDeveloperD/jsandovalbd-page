@@ -55,7 +55,13 @@ const ServicesSection = () => {
               }}
             />
           </Col>
-          <Col md={6} xl={5}>
+          <Col
+            md={6}
+            xl={5}
+            data-aos='fade-left'
+            data-aos-duration={1500}
+            data-aos-once={true}
+          >
             {itemSelected === 0 && <ImageSection src={Design} />}
             {itemSelected === 1 && <ImageSection src={Development} />}
           </Col>

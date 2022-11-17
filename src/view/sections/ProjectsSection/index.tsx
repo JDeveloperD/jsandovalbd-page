@@ -27,8 +27,16 @@ const ProjectsSection = () => {
         />
         <FancyBox options={{ infinite: false }}>
           <Row className='g-1 mt-5'>
-            {listProjects.map(project => (
-              <Col md={6} lg={4} key={project.id}>
+            {listProjects.map((project, i) => (
+              <Col
+                md={6}
+                lg={4}
+                key={project.id}
+                data-aos='fade-up'
+                data-aos-duration={800}
+                data-aos-delay={i * 200}
+                data-aos-once={true}
+              >
                 <CardProject
                   title={project.title}
                   type={project.type}
