@@ -30,9 +30,9 @@ const BannerMain = () => {
               label={t('bannerMain.title.tag')}
               size='sm'
               data-aos='fade-right'
-              data-aos-delay={2500}
-              data-aos-duration={1500}
-              data-aos-once={true}
+              // data-aos-delay={2500}
+              // data-aos-duration={1500}
+              // data-aos-once={true}
             />
             <Typography
               as='h1'
@@ -40,9 +40,9 @@ const BannerMain = () => {
               color='headline-1'
               className='my-3 my-md-4'
               data-aos='fade-right'
-              data-aos-delay={2600}
-              data-aos-duration={1500}
-              data-aos-once={true}
+              // data-aos-delay={2600}
+              // data-aos-duration={1500}
+              // data-aos-once={true}
             >
               {t('bannerMain.title.headline.presentation')}
               <br />
@@ -66,18 +66,18 @@ const BannerMain = () => {
             </Typography>
             <Typography
               data-aos='fade-right'
-              data-aos-delay={2700}
-              data-aos-duration={1500}
-              data-aos-once={true}
+              // data-aos-delay={2700}
+              // data-aos-duration={1500}
+              // data-aos-once={true}
             >
               {t('bannerMain.paragraph')}
             </Typography>
             <div
               className='mt-5'
-              data-aos='fade-right'
-              data-aos-delay={2800}
-              data-aos-duration={1500}
-              data-aos-once={true}
+              // data-aos='fade-right'
+              // data-aos-delay={2800}
+              // data-aos-duration={1500}
+              // data-aos-once={true}
             >
               <Button
                 as='a'

@@ -11,6 +11,7 @@ This page is made with the purpose of showing my projects to the world and demon
 - Spanish and English translation
 - Theme in dark and light mode
 - Image gallery
+- PWA
 
 ## :wrench: Used Tecnologies
 
@@ -24,3 +25,4 @@ This page is made with the purpose of showing my projects to the world and demon
 - Styled Components
 - Bootstrap 5
 - Gh Pages
+- AOS

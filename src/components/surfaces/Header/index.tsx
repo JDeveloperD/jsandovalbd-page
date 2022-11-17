@@ -12,11 +12,17 @@ import NavToggler from '@components/navigations/Nav/NavToggler';
 import { useAppContext } from '@context';
 import { SwitchTheme } from '@theme';
 import { ButtonLanguage } from '@i18n';
+import { useEffect } from 'react';
 
 const Header = () => {
   const { openNav } = useAppContext();
   const scrollDirection = useScrollDirection();
 
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, 1000);
+  }, []);
   return (
     <HeaderWrapper
       id='header'

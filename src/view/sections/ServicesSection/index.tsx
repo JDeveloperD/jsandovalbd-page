@@ -58,7 +58,7 @@ const ServicesSection = () => {
           <Col
             md={6}
             xl={5}
-            data-aos='fade-left'
+            data-aos='fade-up'
             data-aos-duration={1500}
             data-aos-once={true}
           >

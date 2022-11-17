@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { MEDIA_BREAKPOINTS, TRANSITIONS, Z_INDEX_HEADER } from '@theme';
+import { rgba } from 'polished';
 
 export const HeaderButtons = styled.div`
   display: flex;
@@ -26,7 +27,8 @@ export const HeaderWrapper = styled.header<{
   position: sticky;
   width: 100%;
   transition: ${TRANSITIONS.base};
-  background: ${({ theme }) => theme.colors.body};
+  background: ${({ theme }) => rgba(theme.colors.body, 0.5)};
+  backdrop-filter: blur(40px);
 
   ${MEDIA_BREAKPOINTS.tablet} {
     padding: 0;

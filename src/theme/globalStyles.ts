@@ -39,11 +39,12 @@ export default createGlobalStyle`
       }
 
       &::-webkit-scrollbar-thumb {
+        border-radius: 9px;
         background-color: ${theme.colors['background-2']};
 
-        &:hover {
+        /* &:hover {
           background-color: ${lighten(0.15, theme.colors['background-1'])};
-        }
+        } */
       }
 
       &::-webkit-scrollbar-track {
