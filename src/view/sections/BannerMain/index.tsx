@@ -4,6 +4,7 @@ import {
   Container,
   Row,
   SiGmail,
+  HiOutlineDocumentText,
   Tag,
   Typography,
 } from '@components';
@@ -88,6 +89,9 @@ const BannerMain = () => {
                 size='md'
               >
                 {t('bannerMain.button')} <SiGmail />
+              </Button>
+              <Button as='a' variant='outlined' className='ms-2 rounded-pill'  href='pdf/cv-david-sandoval-2023.pdf' target='_blank'>
+                <HiOutlineDocumentText /> Curriculum
               </Button>
             </div>
           </Col>
