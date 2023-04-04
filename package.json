@@ -28,7 +28,8 @@
     "react-wavify": "^1.6.3",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.4",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "vite-plugin-pwa": "^0.14.7"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

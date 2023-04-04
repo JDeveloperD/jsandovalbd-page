@@ -8,6 +8,7 @@ import {
 } from '@components';
 import logoPandora from '@assets/logos/logo-pandora.svg';
 import logoInterfaz from '@assets/logos/logo-interfaz-light.png';
+import logoSolera from '@assets/logos/logo-solera.webp';
 import random2 from '@assets/img/mokups/random2.png';
 import { ImageAnimated, Logo } from './styled';
 import { useTranslation } from 'react-i18next';
@@ -33,7 +34,7 @@ const WorkOnSection = () => {
           className='justify-content-center mt-5 pt-5'
           style={{ zIndex: 3, position: 'relative' }}
         >
-          <Col md={5} lg={4} xl={3}>
+          <Col md={4} xl={3}>
             <Logo
               target='_blank'
               rel='noreferrer'
@@ -42,7 +43,16 @@ const WorkOnSection = () => {
               <img src={logoPandora} />
             </Logo>
           </Col>
-          <Col md={5} lg={4} xl={3}>
+          <Col md={4} xl={3}>
+            <Logo
+              target='_blank'
+              rel='noreferrer'
+              href='https://pandoramarketing.net/'
+            >
+              <img src={logoSolera} />
+            </Logo>
+          </Col>
+          <Col md={4} xl={3}>
             <Logo target='_blank' rel='noreferrer' href='https://interfaz.app/'>
               <img src={logoInterfaz} />
             </Logo>
